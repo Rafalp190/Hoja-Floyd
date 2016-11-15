@@ -12,30 +12,6 @@ public class NodeClass{
 	// Fin de Atributos 
 	
 	// Comienzo metodos
-    /**
-     * @param nombreReferencia This NodeClass's nombreReferencia.
-     */
-    public NodeClass(String nombreReferencia)
-    {
-        indice = errorEnIndice;
-        this.nombreReferencia = nombreReferencia;
-    }
-    /**
-     * @param indice
-     * @param nombreReferencia
-     */
-    public NodeClass(String nombreReferencia, int indice)
-    {
-        this.indice = indice;
-        this.nombreReferencia = nombreReferencia;
-    }
-	
-	
-    // return indice 
-    public int getindice()
-    {
-        return indice;
-    }
 	
     /**
      * @param indice New value for this NodeClass's indice.
@@ -44,6 +20,29 @@ public class NodeClass{
         this.indice = indice;
     }
 	
+    /**
+     * @param indice
+     * @param nombreReferencia
+     */
+    public NodeClass(String nombreReferencia, int indice){
+        this.indice = indice;
+        this.nombreReferencia = nombreReferencia;
+    }
+	
+    /**
+     * @param nombreReferencia This NodeClass's nombreReferencia.
+     */
+    public NodeClass(String nombreReferencia)
+    {
+        indice = errorEnIndice;
+        this.nombreReferencia = nombreReferencia;
+    }
+	
+    // return indice 
+    public int getindice()
+    {
+        return indice;
+    }
 	
     // gets nombre 
     public String getnombreReferencia(){
